@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.542d3d0e.css",
-    "main.js": "/static/js/main.50186a2b.js",
+    "main.css": "/static/css/main.5ec0cd82.css",
+    "main.js": "/static/js/main.363a7db2.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/travelAtease.png": "/static/media/travelAtease.7e939f9c53b295461c93.png",
     "static/media/GroceryStore.png": "/static/media/GroceryStore.bc96ade234c756a820f0.png",
@@ -13,12 +13,12 @@
     "static/media/footer-bg.png": "/static/media/footer-bg.7bd67c0f73571d0acc02.png",
     "static/media/TodoApp.png": "/static/media/TodoApp.a8327e48b31d6bf901fa.png",
     "index.html": "/index.html",
-    "main.542d3d0e.css.map": "/static/css/main.542d3d0e.css.map",
-    "main.50186a2b.js.map": "/static/js/main.50186a2b.js.map",
+    "main.5ec0cd82.css.map": "/static/css/main.5ec0cd82.css.map",
+    "main.363a7db2.js.map": "/static/js/main.363a7db2.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.542d3d0e.css",
-    "static/js/main.50186a2b.js"
+    "static/css/main.5ec0cd82.css",
+    "static/js/main.363a7db2.js"
   ]
 }
