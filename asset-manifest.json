@@ -1,24 +1,22 @@
 {
   "files": {
     "main.css": "/static/css/main.795ecd93.css",
-    "main.js": "/static/js/main.74c794b2.js",
+    "main.js": "/static/js/main.60577b1e.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/travelAtease.png": "/static/media/travelAtease.7e939f9c53b295461c93.png",
-    "static/media/GroceryStore.png": "/static/media/GroceryStore.bc96ade234c756a820f0.png",
     "static/media/header-img.png": "/static/media/header-img.5e6968876a8cc07619b8.png",
     "static/media/Naina_Premani_Resume.pdf": "/static/media/Naina_Premani_Resume.eb3d635e52af128cfd7f.pdf",
     "static/media/CentraNo2-Bold.ttf": "/static/media/CentraNo2-Bold.2faff7f7d3fc92a2fcd9.ttf",
     "static/media/CentraNo2-Medium.ttf": "/static/media/CentraNo2-Medium.f94be5b326d78bb32b95.ttf",
     "static/media/CentraNo2-Book.ttf": "/static/media/CentraNo2-Book.2b143fa4b734a3584043.ttf",
     "static/media/footer-bg.png": "/static/media/footer-bg.7bd67c0f73571d0acc02.png",
-    "static/media/TodoApp.png": "/static/media/TodoApp.a8327e48b31d6bf901fa.png",
     "index.html": "/index.html",
     "main.795ecd93.css.map": "/static/css/main.795ecd93.css.map",
-    "main.74c794b2.js.map": "/static/js/main.74c794b2.js.map",
+    "main.60577b1e.js.map": "/static/js/main.60577b1e.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.795ecd93.css",
-    "static/js/main.74c794b2.js"
+    "static/js/main.60577b1e.js"
   ]
 }
