@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.fcfc073b.css",
-    "main.js": "/static/js/main.a2d95e3f.js",
+    "main.js": "/static/js/main.a40e2415.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/travelAtease.png": "/static/media/travelAtease.7e939f9c53b295461c93.png",
     "static/media/GroceryStore.png": "/static/media/GroceryStore.bc96ade234c756a820f0.png",
@@ -13,11 +13,11 @@
     "static/media/TodoApp.png": "/static/media/TodoApp.a8327e48b31d6bf901fa.png",
     "index.html": "/index.html",
     "main.fcfc073b.css.map": "/static/css/main.fcfc073b.css.map",
-    "main.a2d95e3f.js.map": "/static/js/main.a2d95e3f.js.map",
+    "main.a40e2415.js.map": "/static/js/main.a40e2415.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fcfc073b.css",
-    "static/js/main.a2d95e3f.js"
+    "static/js/main.a40e2415.js"
   ]
 }
