@@ -1,74 +1,67 @@
 import React from "react";
 import "./Contact.css";
-import { VscGithub } from "react-icons/vsc";
-import { CgMail } from "react-icons/cg";
-import { BsInstagram, BsFillTelephoneFill } from "react-icons/bs";
-// import { ThemeContext } from "../../Context/theme";
-import { FaLinkedin } from "react-icons/fa";
+import {
+  Github,
+  Linkedin,
+  EnvelopeFill,
+  TelephoneFill,
+  GeoAltFill,
+} from "react-bootstrap-icons";
+import { profile } from "../../data/resume";
 
 export const Contact = () => {
-  //   const [{ themename }] = React.useContext(ThemeContext);
-
   return (
-    <>
-      <div className="section" id="connect">
-        <h2
-          className="section__title"
-          data-aos="fade-right"
-          style={{ textAlign: "center" }}
+    <section className="section contact" id="connect">
+      <h2 className="section__title" style={{ textAlign: "center" }}>
+        Get in <span className="different">Touch</span>
+      </h2>
+      <p className="section__lead">
+        I am open to frontend engineering roles and interesting product work.
+        The fastest way to reach me is email.
+      </p>
+
+      <div className="contact__actions">
+        <a className="contact__primary" href={`mailto:${profile.email}`}>
+          <EnvelopeFill size={16} />
+          {profile.email}
+        </a>
+      </div>
+
+      <div className="contact__grid">
+        <a
+          className="contact__card"
+          href={profile.linkedin}
+          target="_blank"
+          rel="noreferrer"
         >
-          Get in <span className="different">Touch</span>
-        </h2>
-        <div className="contactMain">
-          <div className={"contactcontainer "} data-aos="fade-right">
-            <a
-              href="https://www.linkedin.com/in/naina-premani-974ba715b/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FaLinkedin className="linkedin" />
-            </a>
-            <a
-              href="https://github.com/NainaPremani"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <VscGithub className="github" />
-            </a>
-            <a
-              href="mailto:nainapremani9@gmail.com"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <CgMail className="email" />
-            </a>
-            <a href="tel:+918055407366" target="_blank" rel="noreferrer">
-              <BsFillTelephoneFill className="phone" />
-            </a>
-          </div>
-          <br />
-          <div className="mailNumber" data-aos="fade-right">
-            <div>
-              <span>
-                <CgMail className="email" />
-              </span>
-              <span>
-                <p>nainapremani9@gmail.com</p>
-              </span>
-            </div>
+          <Linkedin size={20} />
+          <span className="contact__label">LinkedIn</span>
+          <span className="contact__value">naina-premani</span>
+        </a>
 
-            <div className="iconsCont">
-              <span>
-                <BsFillTelephoneFill className="phone" />
-              </span>
+        <a
+          className="contact__card"
+          href={profile.github}
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Github size={20} />
+          <span className="contact__label">GitHub</span>
+          <span className="contact__value">NainaPremani</span>
+        </a>
 
-              <span>
-                <p>+91 8055407366</p>
-              </span>
-            </div>
-          </div>
+        <a className="contact__card" href={`tel:${profile.phone.replace(/\s/g, "")}`}>
+          <TelephoneFill size={18} />
+          <span className="contact__label">Phone</span>
+          <span className="contact__value">{profile.phone}</span>
+        </a>
+
+        <div className="contact__card contact__card--static">
+          <GeoAltFill size={19} />
+          <span className="contact__label">Location</span>
+          <span className="contact__value">{profile.location}</span>
         </div>
       </div>
-    </>
+    </section>
   );
 };

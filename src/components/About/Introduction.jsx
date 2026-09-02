@@ -1,36 +1,39 @@
 import React from "react";
 import "./Introduction.css";
-
-import profilePic from "../../assets/img/header-img.png";
+import { profile } from "../../data/resume";
 
 export const Introduction = () => {
   return (
-    <>
-      <section id="about">
-        <div className="section" data-aos="fade-right">
-          <h2 className="section__title" style={{ textAlign: "center" }}>
-            About <span className="different">Me</span>
-          </h2>
-          <div className={"introduction "}>
-            <div className="introduction_logocontainer">
-              <img src={profilePic} alt="Images" />
-            </div>
-            <div className="introduction_datacontainer">
-              <h4>
-                Hi Everyone, My name is{" "}
-                <span className="different">Naina Premani </span> and I am from{" "}
-                <span className="different"> Shirdi, Maharashtra (India)</span>.
-                I have completed my graduation in Bachelor of Computer Science
-                from{" "}
-                <span className="different">Fergusson College, Pune (MH)</span>.
-                Then I joined full stack development course by{" "}
-                <span className="different">Masai School</span> a military type
-                coding school.
-              </h4>
-            </div>
-          </div>
+    <section id="about" className="section about-section">
+      <h2 className="section__title" style={{ textAlign: "center" }}>
+        About <span className="different">Me</span>
+      </h2>
+
+      <div className="introduction">
+        <div className="introduction_logocontainer">
+          <img src={profile.photo} alt="Naina Premani" />
         </div>
-      </section>
-    </>
+        <div className="introduction_datacontainer">
+          {profile.about.map((paragraph) => (
+            <p key={paragraph}>{paragraph}</p>
+          ))}
+
+          <dl className="about-facts">
+            <div>
+              <dt>Based in</dt>
+              <dd>{profile.location}</dd>
+            </div>
+            <div>
+              <dt>Focus</dt>
+              <dd>React · Next.js · Design Systems</dd>
+            </div>
+            <div>
+              <dt>Currently</dt>
+              <dd>Software Engineer at Altrr</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
   );
 };

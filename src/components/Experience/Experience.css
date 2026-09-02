@@ -1,0 +1,215 @@
+.experience {
+  background-color: var(--clr-bg);
+}
+
+/************ Timeline ************/
+.timeline {
+  list-style: none;
+  margin: 64px 0 0 0;
+  padding: 0 0 0 34px;
+  position: relative;
+}
+
+/* The vertical rail the markers sit on. */
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 10px;
+  bottom: 10px;
+  width: 1px;
+  background: linear-gradient(
+    to bottom,
+    var(--clr-primary),
+    rgba(74, 47, 189, 0.5) 60%,
+    transparent
+  );
+}
+
+.timeline__item {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.timeline__marker {
+  position: absolute;
+  left: -34px;
+  top: 30px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: var(--clr-bg);
+  border: 2px solid var(--clr-primary);
+}
+
+.timeline__item:first-child .timeline__marker {
+  background: var(--clr-primary);
+  box-shadow: 0 0 0 4px rgba(192, 132, 245, 0.18);
+}
+
+.timeline__card {
+  background: var(--clr-surface);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius);
+  padding: 28px 30px;
+  box-shadow: var(--shadow);
+  transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline__card:hover {
+  border-color: var(--clr-border-strong);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lifted);
+}
+
+.timeline__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.timeline__role {
+  font-size: 21px;
+  font-weight: 700;
+  margin: 0;
+  color: var(--clr-fg);
+}
+
+.timeline__company {
+  font-size: 15px;
+  color: var(--clr-primary);
+  margin-top: 5px;
+}
+
+.timeline__company a {
+  color: var(--clr-primary);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  opacity: 0.85;
+  transition: opacity 0.2s ease;
+}
+
+.timeline__company a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.timeline__meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.timeline__period {
+  font-size: 14px;
+  color: var(--clr-fg-alt);
+  white-space: nowrap;
+}
+
+.timeline__location {
+  font-size: 13px;
+  color: var(--clr-fg-muted);
+}
+
+.timeline__blurb {
+  color: var(--clr-fg-alt);
+  font-size: 15px;
+  line-height: 1.6;
+  margin-top: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--clr-border);
+}
+
+.timeline__highlights {
+  list-style: none;
+  margin: 18px 0 22px 0;
+  padding: 0;
+}
+
+.timeline__highlights li {
+  position: relative;
+  padding-left: 20px;
+  color: var(--clr-fg-alt);
+  font-size: 14.5px;
+  line-height: 1.65;
+  margin-bottom: 10px;
+}
+
+/* Chevron bullet, tinted with the site accent. */
+.timeline__highlights li::before {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 8px;
+  width: 5px;
+  height: 5px;
+  border-right: 1.5px solid var(--clr-primary);
+  border-bottom: 1.5px solid var(--clr-primary);
+  transform: rotate(-45deg);
+}
+
+/************ Education ************/
+.education {
+  margin-top: 72px;
+}
+
+.education__title {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.education__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.education__card {
+  background: var(--gradient-soft);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius);
+  padding: 24px 26px;
+}
+
+.education__card h4 {
+  font-size: 17px;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+}
+
+.education__card p {
+  color: var(--clr-fg-alt);
+  font-size: 14.5px;
+  margin: 0 0 6px 0;
+}
+
+.education__card span {
+  color: var(--clr-fg-muted);
+  font-size: 13px;
+}
+
+@media (max-width: 720px) {
+  .timeline {
+    padding-left: 26px;
+  }
+
+  .timeline__marker {
+    left: -26px;
+  }
+
+  .timeline__card {
+    padding: 22px 20px;
+  }
+
+  .timeline__meta {
+    align-items: flex-start;
+    text-align: left;
+  }
+}
