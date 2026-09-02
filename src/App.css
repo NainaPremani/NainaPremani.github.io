@@ -251,6 +251,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /************ Banner Css ************/
+/* Centred rather than left-aligned: with the portrait removed the hero
+   spans full width, and centring matches the section headings below. */
 .banner {
   margin-top: 0;
   padding: 190px 0 110px 0;
@@ -259,6 +261,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+  text-align: center;
 }
 
 .banner .tagline {
@@ -301,12 +304,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-size: 16.5px;
   letter-spacing: 0.2px;
   line-height: 1.7;
-  max-width: 560px;
+  max-width: 620px;
+  margin: 0 auto;
 }
 
 .banner__actions {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 14px;
   margin-top: 34px;
 }
@@ -354,12 +359,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner__stats {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
+  justify-content: center;
+  gap: 48px;
   list-style: none;
-  margin: 52px 0 0 0;
+  margin: 52px auto 0 auto;
   padding: 26px 0 0 0;
   border-top: 1px solid var(--clr-border);
-  max-width: 560px;
+  max-width: 620px;
 }
 
 .banner__stats strong {
@@ -374,34 +380,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: block;
   font-size: 12.5px;
   color: var(--clr-fg-muted);
-  margin-top: 5px;
-  max-width: 140px;
+  margin: 5px auto 0 auto;
+  max-width: 150px;
   line-height: 1.45;
-}
-
-.banner__portrait {
-  display: flex;
-  justify-content: center;
-}
-
-/* Fixed circular frame; the image is scaled up inside it so the face fills
-   the circle rather than sitting small with headroom above. */
-.banner__portrait-frame {
-  width: 100%;
-  max-width: 330px;
-  aspect-ratio: 1 / 1;
-  border-radius: 50%;
-  overflow: hidden;
-  border: 1px solid var(--clr-border-strong);
-  box-shadow: var(--shadow-lifted);
-}
-
-.banner__portrait-frame img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transform: scale(1.32);
-  transform-origin: 50% 35%;
 }
 
 @media (max-width: 767px) {
@@ -419,10 +400,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   .banner__actions,
   .banner__stats {
     justify-content: center;
-  }
-
-  .banner__portrait {
-    margin-top: 48px;
   }
 }
 
