@@ -15,7 +15,7 @@ export const profile = {
   github: "https://github.com/NainaPremani",
   linkedin: "https://www.linkedin.com/in/naina-premani-974ba715b/",
   resume: process.env.PUBLIC_URL + "/Naina_Premani_Resume.pdf",
-  photo: process.env.PUBLIC_URL + "/MyPicture.jpg",
+  photo: process.env.PUBLIC_URL + "/profile.jpg",
   summary:
     "Frontend engineer with nearly 3 years building production React and Next.js applications for AI-powered real estate and healthcare platforms.",
   about: [

@@ -96,7 +96,9 @@ export const Banner = () => {
                     isVisible ? "animate__animated animate__zoomIn" : ""
                   }`}
                 >
-                  <img src={profile.photo} alt="Naina Premani" />
+                  <div className="banner__portrait-frame">
+                    <img src={profile.photo} alt="Naina Premani" />
+                  </div>
                 </div>
               )}
             </TrackVisibility>
