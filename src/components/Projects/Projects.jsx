@@ -48,6 +48,7 @@ export const Projects = () => {
         {projects.map((item) => (
           <article className="repo-card" key={item.title}>
             <h4 className="repo-card__title">{item.title}</h4>
+            {item.note && <span className="repo-card__note">{item.note}</span>}
             <p className="repo-card__desc">{item.description}</p>
             <div className="tag-row">
               {item.stack.map((tech) => (
