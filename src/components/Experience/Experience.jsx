@@ -1,18 +1,46 @@
 import React from "react";
 import "./Experience.css";
 import { BoxArrowUpRight } from "react-bootstrap-icons";
-import { experience, education } from "../../data/resume";
+import { capabilities, experience, education } from "../../data/resume";
 
 export const Experience = () => {
   return (
     <section id="experience" className="section experience">
       <h2 className="section__title" style={{ textAlign: "center" }}>
-        Where I have <span className="different">Worked</span>
+        Professional <span className="different">Experience</span>
       </h2>
       <p className="section__lead">
-        Nearly three years shipping production frontends — AI-powered real
-        estate, healthcare, and corporate social responsibility.
+        About three years shipping production products, from AI-powered real
+        estate to healthcare and CSR platforms.
       </p>
+
+      <div className="capabilities">
+        {capabilities.map((item) => (
+          <article className="capability" key={item.title}>
+            <h3 className="capability__title">{item.title}</h3>
+            <p className="capability__text">{item.text}</p>
+            {item.links && (
+              <div className="capability__links">
+                {item.links.map((link) => (
+                  <a
+                    key={link.href}
+                    href={link.href}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {link.label}
+                    <BoxArrowUpRight size={11} />
+                  </a>
+                ))}
+              </div>
+            )}
+          </article>
+        ))}
+      </div>
+
+      <h3 className="experience__subtitle">
+        Work <span className="different">History</span>
+      </h3>
 
       <ol className="timeline">
         {experience.map((job) => (
@@ -21,7 +49,7 @@ export const Experience = () => {
             <article className="timeline__card">
               <header className="timeline__head">
                 <div>
-                  <h3 className="timeline__role">{job.title}</h3>
+                  <h4 className="timeline__role">{job.title}</h4>
                   <p className="timeline__company">
                     {job.company}
                     {job.link && (
@@ -42,12 +70,6 @@ export const Experience = () => {
               </header>
 
               <p className="timeline__blurb">{job.blurb}</p>
-
-              <ul className="timeline__highlights">
-                {job.highlights.map((point) => (
-                  <li key={point}>{point}</li>
-                ))}
-              </ul>
 
               <div className="tag-row">
                 {job.stack.map((tech) => (

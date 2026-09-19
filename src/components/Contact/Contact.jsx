@@ -16,8 +16,7 @@ export const Contact = () => {
         Get in <span className="different">Touch</span>
       </h2>
       <p className="section__lead">
-        I am open to frontend engineering roles and interesting product work.
-        The fastest way to reach me is email.
+        Open to full stack developer roles and interesting product work. Email is the fastest way to reach out.
       </p>
 
       <div className="contact__actions">

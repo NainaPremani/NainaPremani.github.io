@@ -19,6 +19,11 @@ import {
   SiHtml5,
   SiCss,
   SiGit,
+  SiDocker,
+  SiNodedotjs,
+  SiExpress,
+  SiGitlab,
+  SiStrapi,
 } from "react-icons/si";
 import { skills } from "../data/resume";
 
@@ -34,6 +39,11 @@ const TECH = [
   { name: "shadcn/ui", Icon: SiShadcnui },
   { name: "TanStack Query", Icon: SiReactquery },
   { name: "Redux Toolkit", Icon: SiRedux },
+  { name: "Node.js", Icon: SiNodedotjs },
+  { name: "Express", Icon: SiExpress },
+  { name: "Strapi", Icon: SiStrapi },
+  { name: "Docker", Icon: SiDocker },
+  { name: "GitLab CI/CD", Icon: SiGitlab },
   { name: "Turborepo", Icon: SiTurborepo },
   { name: "pnpm", Icon: SiPnpm },
   { name: "Vite", Icon: SiVite },
@@ -72,8 +82,8 @@ export const Skills = () => {
             <div className="skill-bx wow zoomIn">
               <h2>Skills</h2>
               <p>
-                The stack I reach for day to day — typed React, component
-                architecture, and the tooling that holds a monorepo together.
+                The stack used day to day: typed React and Next.js, Node backends,
+                and the Docker and CI/CD tooling around them.
               </p>
               <Carousel
                 responsive={responsive}

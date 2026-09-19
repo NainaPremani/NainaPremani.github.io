@@ -25,7 +25,7 @@ export const Introduction = () => {
             </div>
             <div>
               <dt>Focus</dt>
-              <dd>React · Next.js · Design Systems</dd>
+              <dd>Next.js · Node.js · SEO</dd>
             </div>
             <div>
               <dt>Currently</dt>
